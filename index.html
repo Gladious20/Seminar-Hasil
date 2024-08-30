@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front View Detection</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="script.js" defer></script>
+    <script src="detectTear1.js" defer></script>
+</head>
+<body>
+    <h1>Upload Front View</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+    <img id="selectedImage" width="300"/>
+    <br><br>
+    <button onclick="classifyImage()">Deteksi Sekarang</button>
+    <p id="result"></p>
+    <p id="result2"></p>
+    <button id="nextButton" onclick="goToBackView()" style="display: none;">Next</button>
+</body>
+</html>
